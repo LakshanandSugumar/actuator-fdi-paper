@@ -1,0 +1,20 @@
+calibration ...
+   {'c0': np.float32(0.23072532), 'c1': 0.0004500000000000001, 'c2': 0.09000000000000001, 'thr_m': np.float32(0.092880815), 'thr_fe': np.float32(0.006166688), 'cal_minutes': 3.0}
+false alarms ...
+   {'runs': 180, 'hours': 1.0, 'rv': 0, 'rm': 0, 'fe': 40, 'any_proposed': 0}
+robustness ...
+   {'scale': 1.0, 'runs': 30, 'rv_fa_runs': 0, 'rm_fa_runs': 0}
+   {'scale': 1.5, 'runs': 30, 'rv_fa_runs': 0, 'rm_fa_runs': 0}
+   {'scale': 2.0, 'runs': 30, 'rv_fa_runs': 0, 'rm_fa_runs': 3}
+   {'scale': 3.0, 'runs': 30, 'rv_fa_runs': 3, 'rm_fa_runs': 5}
+Monte Carlo fault trials ...
+  freeze      det med 0.27 ms  classes {'ENC': 49, 'COLL': 1}
+  offset      det med 0.22 ms  classes {'ENC': 50}
+  disconnect  det med 0.23 ms  classes {'ENC': 50}
+  phase_open  det med 1.30 ms  classes {'PHASE': 50}
+  collision   det med 2.29 ms  classes {'COLL': 50}
+  load_step   det med 1.84 ms  classes {'LOAD': 50}
+ROC {'rv_enc': {'auc': 0.9998538011695906, 'tpr_at_op': 1.0, 'fpr_at_op': 0.0}, 'fe_enc': {'auc': 0.9977534113060429, 'tpr_at_op': 0.94, 'fpr_at_op': 0.012280701754385965}, 'rm_coll': {'auc': 0.9999005847953215, 'tpr_at_op': 1.0, 'fpr_at_op': 0.0}, 'fe_coll': {'auc': 0.9996374269005848, 'tpr_at_op': 1.0, 'fpr_at_op': 0.012280701754385965}}
+speed sweeps ...
+   {'speeds': [0.25, 0.5, 1.0, 2.0, 3.0, 4.0], 'freeze_rv': [np.float64(2.950000000000008), np.float64(1.0000000000000009), np.float64(0.6000000000000449), np.float64(0.45000000000000595), np.float64(0.40000000000001146), np.float64(0.40000000000001146)], 'freeze_fe': [np.float64(25.650000000000006), np.float64(12.450000000000017), np.float64(6.350000000000023), np.float64(3.2500000000000306), np.float64(2.2500000000000298), np.float64(1.7000000000000348)], 'coll_rm': [np.float64(12.039999999999996), np.float64(5.96000000000002), np.float64(4.0000000000000036), np.float64(2.8200000000000447), np.float64(1.9700000000000273), np.float64(2.0000000000000018)], 'coll_fe': [np.float64(30.490000000000016), np.float64(16.860000000000042), np.float64(10.850000000000026), np.float64(7.870000000000044), np.float64(6.670000000000065), np.float64(5.950000000000011)], 'peak_prop': [np.float64(0.11190560152751858), np.float64(0.22391865590192792), np.float64(0.42420604874483236), np.float64(0.8261800151064457), np.float64(1.2289144508896932), np.float64(1.6456278412459289)], 'peak_fe': [np.float64(0.11936983036193011), np.float64(0.22893184818029538), np.float64(0.4597690063881361), np.float64(0.9181989416734321), np.float64(1.3728053074525126), np.float64(1.8059766516727584)], 'peak_none': [np.float64(0.7794553998848682), np.float64(1.5541790538903804), np.float64(3.109358732334778), np.float64(6.056350065337542), np.float64(6.0879440230440345), np.float64(6.118923131032319)], 'clamp_none': [0.41201531887054443, 0.8224790692329407, 1.6442577838897705, 3.2894957065582275, 4.933213233947754, 6.080519199371338], 'clamp_prop': [-0.0, -0.0, -0.0, -0.0, -0.0, -0.0]}
+done in 70 s

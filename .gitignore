@@ -1,0 +1,8 @@
+*.aux
+*.log
+!sim/results/run.log
+*.bbl
+*.blg
+*.out
+*.synctex.gz
+__pycache__/
